@@ -23,12 +23,19 @@ export default function App() {
    <View style={styles.container}>
      <View style={styles.textborder}>
       <Text style={{fontFamily: 'ShareTechMono_400Regular', fontWeight: 'bold',
-  fontSize: 17,
-  color: 'black'}}>
+  fontSize: 15,
+  color: 'black', textAlign: 'center'}}>
   Thirsty? These bars near you are still open:</Text>
       <Text style={styles.title2}>Change location</Text>
       <StatusBar style="auto" />
+            <BarCard /> 
+            <BarCard /> 
             <BarCard />      
+            <BarCard />      
+            <BarCard />      
+
+<Text style={styles.title2}>Load more bars...</Text>
+
             </View>
     </View>
     
@@ -47,11 +54,9 @@ top: 70
   container: {
     backgroundColor: '#F6F3FA',
     flex: 1,
-
     alignItems: 'center',
 
-    // justifyContent: 'center',   
-
+   
   },
 
 title: {
@@ -60,8 +65,10 @@ title: {
 },
 
 title2: {
+paddingTop: '5px',
 color: '#19A6F5',
-fontSize: 12
+fontSize: 10,
+textAlign: 'center'
 }
 
   
