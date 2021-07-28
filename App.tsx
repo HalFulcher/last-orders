@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import AppLoading from 'expo-app-loading';
 import BarCard from './BarCard';
 import { useFonts, ShareTechMono_400Regular } from '@expo-google-fonts/share-tech-mono';
-
+import { GOOGLE_API_KEY } from "react-native-dotenv";
 
 
 export default function App() {
